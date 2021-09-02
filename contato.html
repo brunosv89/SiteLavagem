@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="css-reset.css">
+    <link rel="stylesheet" href="style-contato.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="caixa">
+            <h1><img src="GarageCar Logo.png" alt="Logo da GarageCar"></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <form>
+            <label for="nomesobrenome">Nome e Sobrenome</label>
+            <input type="text" id="nomesobrenome" class="input-padrao" required>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" class="input-padrao" required>
+        
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+
+            <label for="mensagem"> Mensagem</label>
+            <textarea cols="50" rows="7" id="mensagem" class="input-padrao" required></textarea>
+
+            <fieldset>
+            <legend>Como prefere o nosso contato?</legend>
+                <label for="radio-email"><input type="radio" value="email" id="radio-email" name="option"> E-mail</label>
+                
+                
+                <label for="radio-telefone"><input type="radio" value="telefone" id="radio-telefone" name="option"> Telefone</label>
+                
+
+                <label for="radio-wapp"><input type="radio" value="wapp" id="radio-wapp" name="option" checked> WhatsApp</label>
+                
+            </fieldset>
+            <fieldset>
+                <legend>Qual horário prefere ser atendido?</legend>
+                <select>
+
+                    <option>Manhã</option>
+                    <option>Tarde</option>
+                    <option>Noite</option>
+                </select>
+            </fieldset>
+
+            <label class="checkbox"><input type="checkbox">Gostaria de receber nossas novidades por E-mail?</label>
+            
+            <input type="submit" value="Enviar" class="enviar">
+
+        </form>
+
+    </main>
+
+
+    <footer>
+        <p class="copyright">&copy; Copyright Garage Car - 2021</p>
+    </footer>
+</body>
+</html>
