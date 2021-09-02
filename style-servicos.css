@@ -1,0 +1,133 @@
+body {
+    font-family: 'Baloo Tammudu 2', cursive;
+}
+
+.caixa {
+    width: 940px;
+    margin: 0 auto;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #76c0ea;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: darkcyan;
+    transition: 0.5s color;
+}
+
+main {
+    background: linear-gradient(white, #76c0ea);
+}
+
+.linha {
+    background-color: #76c0ea;
+}
+
+.servicos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+    background: linear-gradient(white, #76c0ea);
+}
+
+.servicos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;  
+      
+    margin: 0 1.5%;
+    padding: 30px 20px;     
+    box-sizing: border-box;
+    
+    border-color: #76c0ea;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    
+}
+
+.servicos li:hover {
+    border-color: darkcyan;
+} 
+
+.servicos li:active {
+    border-color: darkgoldenrod;
+}
+
+.servicos li:hover h2 {
+    font-size: 32px;
+}
+
+.servicos li:hover .servico-preco {
+    font-size: 30px;
+    color: darkcyan;
+}
+
+.servicos h2 {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.servico-descricao {
+    font-size: 18px;
+}
+
+.servico-preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    color:black;
+    background: url("bgfooter.png");
+    padding: 20px;
+}
+
+
+.copyright {
+    font-size: 10px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 480px) {
+    .caixa, .principal, .servicos {
+        width: auto;
+        padding: auto;
+        margin: auto;
+    }
+
+    .servicos li {
+        width: 480px;
+        vertical-align: auto;
+    }
+
+    nav {
+        position: static;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+};

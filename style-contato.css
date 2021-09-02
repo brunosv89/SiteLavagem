@@ -1,0 +1,109 @@
+body {
+    font-family: 'Baloo Tammudu 2', cursive;
+}
+.caixa {
+    width: 940px;
+    margin: 0 auto;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #76c0ea;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: darkcyan;
+    transition: 0.5s color;
+}
+
+main {
+    width: 940px;
+    margin: 0 auto;
+    background: linear-gradient(white, #76c0ea);
+    margin: 0 auto;
+    padding: 10px 15%;
+}
+
+form {
+    margin: 40px 0;
+}
+
+form label, form legend {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.input-padrao {
+    display: block;
+    margin-bottom: 20px;
+    padding: 5px 5px;
+    width: 40%;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+.enviar {
+    width: 30%;
+    padding: 15px;
+    background-color: aliceblue;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 10px;
+    transition: 0.5s background-color;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background-color: rgb(209, 219, 219);
+}
+
+
+
+
+footer {
+    text-align: center;
+    color:black;
+    background: url("bgfooter.png");
+    padding: 20px;
+}
+
+
+.copyright {
+    font-size: 10px;
+    margin-top: 20px;
+}
+
+
+@media screen and (max-width: 480px) {
+    .caixa, .principal, .enviar {
+        width: auto;
+    }
+
+     nav {
+        position: static;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+};
